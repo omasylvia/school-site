@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ubuntu", sans-serif;
+}
+body {
+  /* overflow: hidden; */
+  /* background-position: 20%; */
+  align-items: center;
+}
+section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7fcca;
+  background-image: url(./spag.png  );
+  background-repeat: no-repeat;
+  /* background-position: right; */
+  background-position-x: right;
+  background-size: 550px;
+  background-position-y: 55px;
+  padding-left: 100px;
+  
+}
+.text {
+  height: auto;
+}
+.text h1 {
+  /* height: 20px; */
+  /* align-items: center; */
+  /* justify-content: center;  */
+  font-size: 60px;
+  /* padding-left: 30px; */
+  margin-bottom: 20px;
+}
+.text p {
+  /* height: 20px; */
+  /* align-items: center; */
+  /* justify-content: center;  */
+  font-size: 25px;
+  /* padding-left: 30px; */
+  /* margin-top: 135px; */
+  margin-bottom: 20px;
+}
+.text button {
+  align-items: center;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 15px;
+  border: none;
+  background-color: #8a2435;
+  color: white;
+}
+.text button:hover {
+  transition: 0.5s ease-in-out;
+  background-color: white;
+  color: brown;
+}
+
+section .blur_clr {
+  position: absolute;
+  filter: blur(150px);
+}
+section .blur_clr:nth-child(1) {
+  background: #fffd87;
+  width: 500px;
+  height: 500px;
+  right: -50px;
+  top: -250px;
+}
+section .blur_clr:nth-child(2) {
+  background: #fffd87;
+  width: 300px;
+  height: 300px;
+  left: -100px;
+  bottom: -150px;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header i {
+  position: relative;
+  font-size: 2.5em;
+  color: #8a2435;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header .nav {
+  position: relative;
+  display: flex;
+}
+header .nav li {
+  list-style: none;
+  margin: 10px;
+}
+header .nav li a {
+  color: #8a2435;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+header .nav li a:hover {
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+header .btn {
+  background: #8a2435;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+header .btn:hover {
+  transform: scale(0.9);
+}
+img {
+  width: 50%;
+  height: 20%;
+  align-content: center;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.content.contentBx {
+  max-width: 500px;
+}
+.content.contentBx h1 {
+  font-size: 4.5em;
+  color: #000;
+  line-height: 1em;
+  margin: 10px;
+}
+.content.contentBx p {
+  font-size: 1em;
+  color: #000;
+  line-height: 1em;
+  margin: 10px;
+}
+.nav a {
+  display: flex;
+}
+
+.parent {
+  height: 100vh;
+  width: 100%;
+  background-color: #fffd87;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  height: 600px;
+  background-color: red;
+}
+.card {
+  background-color: white;
+  height: 120%;
+  width: 30px;
+  
+}
+.card-image {
+  background-image: url(./06031042b3139bc004574efd9266bc94.png);
+  background-size: cover;
+  font-size: 30%;
+  height: 58%;
+}
+.card-text {
+  margin-top: 10%;
+  padding-left: 19%;
+  justify-content: center;
+  justify-content: center;
+align-items: center;
+height: 90vh;
+  
+  
+}
+.card-text p {
+  margin-bottom: 2%;
+}
+.price{
+  align-content: center;
+}
+
+.price p {
+  margin-bottom: 15%;
+}
+button {
+  border-radius: 20px;
+  font-size: 30%;
+  padding: 3%; 
+align-items: center;
+color: red;
+background-color: #fffb87;
+;
+}
+
+
+button:hover {
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+
+}
+section.Formside{
+  height: 70vh;
+  background-color:#f7fcca;
+  display: list-item;
+  color: black;
+  
+
+}
+section.Formside h1{
+  align-content: space-around;
+  color: red;
+  flex-direction: column;
+font-size: 5vh;  font-weight: 15vh;
+padding-top: 5%;
+
+  
+}
+form{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+form input{
+  width: 10%;
+  border: none;
+  border-bottom: 2px solid grey;
+  padding: 0.5rem 0.5rem;
+  transition: .2s ease-in-out;
+  background:white;
+}
+form input:focus-visible{
+  outline: 3px solid blue;
+  border-radius: 30px;
+  background: red;
+}
+form button{
+  border: none;
+  padding: 1rem;
+  transition: .3s ease-in-out;
+  color: white;
+  background:red;
+  font-weight: 300;
+  width: 150px;
+  font-size: 1rem;
+  
+}
+
+.sec2{
+  background-color: #fffd87;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;  
+
+}
+.Card{
+  
+ width: 300px;
+ height: 375px;
+ border-radius: 15px;
+ /* background-color: #5b5a00; */
+}
+.image{
+/* background: url(./chic.png); */
+background:#f4f156 url(./pexels-photo-10081225\ sauced\ meat.jpeg) ;
+width: 100%;
+height: 50%;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+.image1{
+  /* background: url(./chic.png); */
+  background: #f4f156 url(./burger.png) ;
+  width: 100%;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+  .image2{
+    /* background: url(./chic.png); */
+    background:#f4f156 url(./chic.png) ;
+    width: 100%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .image3{
+      /* background: url(./chic.png); */
+      background:#f4f156 url(./joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg) ;
+      width: 100%;
+      height: 50%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+      .image4{
+        /* background: url(./chic.png); */
+        background:#f4f156 url(./crp\ fod.jpg) ;
+        width: 100%;
+        height: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+.title{
+  width: 100%;
+  padding: 20px;
+  height: 30%;
+  background-color: #fff;
+}
+.Formside{
+
+}
